@@ -1,0 +1,79 @@
+@import './../../assets/styles/_colors.scss';
+
+.Product {
+  width: 100%;
+  margin: 1em 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  // text-align: left;
+
+  color: $tertiary-color;
+  // background-color: $secundary-color;
+
+  padding: 0px;
+  border-radius: 0.2em;
+  // box-shadow: 2px 03px 6px #00000033;
+  border: 2px solid $secundary-color;
+
+  .ProductImage {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 40px;
+    }
+  }
+
+  .ProductDetails {
+    background-color: $secundary-color;
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 15px 0px;
+    // text-align: left;
+
+    .ProductTitle {
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    .ProductDescription {
+      color: $higlight-color;
+      font-size: 0.8em;
+      font-weight: 400;
+      // padding: 0.5em 0;
+    }
+
+    .ProductPrice {
+      font-size: 1em;
+      font-weight: bolder;
+    }
+
+    .ProductCategory {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      span {
+        background-color: $tertiary-color;
+        color: $secundary-color;
+        font-size: 0.7em;
+        padding: 0.2em;
+        border-radius: 0.3em;
+        margin: 0px 2px;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0.3 0.3 0.3 black;
+  }
+}
