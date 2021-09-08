@@ -1,0 +1,6 @@
+version: '3.9'
+services:
+  fe-digital-colosal:
+    build: .
+    ports:
+      - '80:80'
