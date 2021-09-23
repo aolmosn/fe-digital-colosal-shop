@@ -15,7 +15,11 @@ const Navigator = () => {
     },
     {
       label: 'Productos',
-      link: '/products'
+      link: '/product'
+    },
+    {
+      label: 'Perfil',
+      link: '/user'
     }
   ])
   const [menuVisibilityStatus, setMenuVisibilityStatus] = useState<boolean>(false)
