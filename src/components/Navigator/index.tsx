@@ -18,7 +18,7 @@ const Navigator = () => {
       link: '/product'
     },
     {
-      label: 'Perfil',
+      label: 'Profile',
       link: '/user'
     }
   ])
