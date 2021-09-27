@@ -1,4 +1,27 @@
 .ProductListContainer {
   width: 100%;
   padding: 0px 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 360px) {
+}
+
+@media (min-width: 412px) {
+}
+
+@media (min-width: 720px) {
+  .ProductListContainer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1366px) {
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (min-width: 1920px) {
 }

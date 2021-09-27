@@ -1,167 +1,177 @@
 @import './../../assets/styles/_colors.scss';
 
-@media (min-width: 360px) {
-  .M {
-    background-color: $primary-color;
-    width: 100%;
-    list-style: none;
+.M {
+  background-color: $primary-color;
+  width: 100%;
+  list-style: none;
 
-    li {
-      transition: 0.3s all;
-      text-align: left;
-      color: $higlight-color;
-      // padding: 0.6em 0.5em;
-      // border-bottom: 1px solid $higlight-color;
-      width: 100%;
-      // background-color: $secundary-color;
-      cursor: pointer;
-      // border: 1px solid $secundary-color;
+  li {
+    transition: 0.3s all;
+    text-align: left;
+    color: $higlight-color;
+    // padding: 0.6em 0.5em;
+    // border-bottom: 1px solid $higlight-color;
+    width: 100%;
+    // background-color: $secundary-color;
+    cursor: pointer;
+    // border: 1px solid $secundary-color;
+
+    // a {
+    //   font-weight: normal;
+    //   color: $tertiary-color;
+    //   display: block;
+    //   padding: 0.6em 0.5em;
+    //   font-size: 14px;
+    // }
+
+    &.Title {
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0.3em 0.5em;
+      // border-bottom: 5px solid $primary-color;
+      margin-bottom: 1em;
+      font-weight: normal;
+      font-size: 0.9em;
+    }
+
+    &.SubMenuLink {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        // padding: 0.6em 0.5em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        transition: 0.6s all;
+        // border-left: 2px solid $primary-color;
+      }
+    }
+
+    &:hover {
+      // opacity: 0.5;
+      background-color: $secundary-color;
+      // border: 1px solid $higlight-color;
+      // border-left: 5px solid $higlight-color;
+
+      span {
+        // background-color: $secundary-color;
+        // transform: translate(5px, 0px);
+        // border-left: 2px solid $primary-color;
+      }
+
+      a {
+        // transform: translate(10px, 0px);
+      }
 
       // a {
-      //   font-weight: normal;
-      //   color: $tertiary-color;
-      //   display: block;
-      //   padding: 0.6em 0.5em;
-      //   font-size: 14px;
+      //   color: $secundary-color;
       // }
 
-      &.Title {
-        text-transform: uppercase;
-        margin: 0;
-        padding: 0.3em 0.5em;
-        // border-bottom: 5px solid $primary-color;
-        margin-bottom: 1em;
-        font-weight: normal;
-        font-size: 0.9em;
-      }
-
-      &.SubMenuLink {
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        span {
-          // padding: 0.6em 0.5em;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          min-width: 40px;
-          transition: 0.6s all;
-          // border-left: 2px solid $primary-color;
-        }
-      }
-
-      &:hover {
-        // opacity: 0.5;
-        background-color: $secundary-color;
-        // border: 1px solid $higlight-color;
-        // border-left: 5px solid $higlight-color;
-
-        span {
-          // background-color: $secundary-color;
-          // transform: translate(5px, 0px);
-          // border-left: 2px solid $primary-color;
-        }
-
-        a {
-          // transform: translate(10px, 0px);
-        }
-
-        // a {
-        //   color: $secundary-color;
-        // }
-
-        // span {
-        //   color: $secundary-color;
-        // }
-      }
+      // span {
+      //   color: $secundary-color;
+      // }
     }
   }
+}
 
-  .SubMenu {
-    @extend .M;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    transition: 0.3s all;
-    left: 0%;
-  }
-  .Menu {
-    z-index: 1;
+.SubMenu {
+  @extend .M;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: 0.3s all;
+  left: 0%;
+}
+.Menu {
+  z-index: 1;
 
-    border-right: 1px solid black;
-    box-shadow: 0.3px 0.3px 4px 1px #00000038;
-    @extend .M;
-    // padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    transition: 0.3s all;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0%;
-    transform: translate(0%);
-    width: 80%;
-    overflow: hidden;
-    height: 100vh;
+  border-right: 1px solid black;
+  box-shadow: 0.3px 0.3px 4px 1px #00000038;
+  @extend .M;
+  // padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  transition: 0.3s all;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0%;
+  transform: translate(0%);
+  width: 80%;
+  overflow: hidden;
+  height: 100vh;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    .MenuOptions {
+  .MenuOptions {
+    width: 100%;
+    ul {
+      list-style: none;
       width: 100%;
-      ul {
-        list-style: none;
-        width: 100%;
-        li {
-          // width: 100%;
-        }
+      li {
+        // width: 100%;
       }
     }
-
-    .MenuLogo {
-      margin-bottom: 2em;
-    }
   }
 
-  .Hide {
-    left: 100%;
+  .MenuLogo {
+    margin-bottom: 2em;
   }
+}
 
-  .Show {
-    transform: translate(-100%);
-  }
+.Hide {
+  left: 100%;
+}
 
-  .Back {
-    font-weight: normal;
-    padding: 0.6em 0.5em;
-    font-size: 0.9em;
-  }
+.Show {
+  transform: translate(-100%);
+}
 
-  .MenuContainer {
-    &.HideMenu {
-      .Layer {
-        display: none;
-      }
-    }
+.Back {
+  font-weight: normal;
+  padding: 0.6em 0.5em;
+  font-size: 0.9em;
+}
+
+.MenuContainer {
+  &.HideMenu {
     .Layer {
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      background-color: black;
-      opacity: 0.1;
+      display: none;
     }
   }
+  .Layer {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    background-color: black;
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: 360px) {
 }
 
 @media (min-width: 412px) {
 }
 
 @media (min-width: 1366px) {
+  .M {
+    display: none;
+  }
+  .MenuContainer {
+    display: none;
+  }
 }
 
 @media (min-width: 1536px) {

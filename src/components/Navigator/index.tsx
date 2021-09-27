@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Icon from '@material-ui/core/Icon'
+import { Link } from 'react-router-dom'
 
 // Components
 import Menu, { MenuOption } from '../Menu'
@@ -48,6 +49,13 @@ const Navigator = () => {
       </span>
       <Logo color="#d66d6d" width={42} height={42} />
       <Menu options={menu} handleMenuClose={handleMenuClose} menuStatus={menuVisibilityStatus} />
+      <ul className={classes.HorizontalMenu}>
+        {menu.map(menuOption => (
+          <li key={menuOption.label}>
+            <Link to={menuOption.link}>{menuOption.label}</Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   )
 }
