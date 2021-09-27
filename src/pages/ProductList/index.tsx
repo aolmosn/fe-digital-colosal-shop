@@ -19,6 +19,20 @@ const ProductList = () => {
       description: 'Gaming headset + 7.1',
       price: '$ 54.990',
       categorias: ['Gaming', 'Audifonos', 'Microfono']
+    },
+    {
+      image: ProductoEjemplo,
+      title: 'HYPERX Cloud Core',
+      description: 'Gaming headset + 7.1',
+      price: '$ 54.990',
+      categorias: ['Gaming', 'Audifonos', 'Microfono']
+    },
+    {
+      image: ProductoEjemplo,
+      title: 'HYPERX Cloud Core',
+      description: 'Gaming headset + 7.1',
+      price: '$ 54.990',
+      categorias: ['Gaming', 'Audifonos', 'Microfono']
     }
   ])
 
