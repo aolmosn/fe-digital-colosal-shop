@@ -7,6 +7,7 @@ import ProductoEjemplo from '../../assets/images/product_example.png'
 const ProductList = () => {
   const [productList, setProductList] = useState<Array<IProduct>>([
     {
+      id: 1,
       image: ProductoEjemplo,
       title: 'HYPERX Cloud Core',
       description: 'Gaming headset + 7.1',
@@ -14,6 +15,7 @@ const ProductList = () => {
       categorias: ['Gaming', 'Audifonos']
     },
     {
+      id: 2,
       image: ProductoEjemplo,
       title: 'HYPERX Cloud Core',
       description: 'Gaming headset + 7.1',
@@ -21,6 +23,7 @@ const ProductList = () => {
       categorias: ['Gaming', 'Audifonos', 'Microfono']
     },
     {
+      id: 3,
       image: ProductoEjemplo,
       title: 'HYPERX Cloud Core',
       description: 'Gaming headset + 7.1',
@@ -28,6 +31,7 @@ const ProductList = () => {
       categorias: ['Gaming', 'Audifonos', 'Microfono']
     },
     {
+      id: 4,
       image: ProductoEjemplo,
       title: 'HYPERX Cloud Core',
       description: 'Gaming headset + 7.1',
@@ -43,6 +47,7 @@ const ProductList = () => {
         {productList.map(product => (
           <Product
             key={product.title}
+            id={product.id}
             image={product.image}
             title={product.title}
             description={product.description}
